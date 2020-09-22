@@ -1,0 +1,166 @@
+- id: natur
+  title: Madeira's unieke natuur
+  count: "1"
+  nav-title: Natuur
+  description: "Madeira betovert je met een heerlijk mediterraan klimaat en een flora en fauna die nergens anders in Europa te vinden is. Dit is te danken aan de nabijheid van de Golfstroom die het turkooizen zeewater rond het eiland opwarmt tot aangename temperaturen. Daarnaast zorgt de vulkanische oorsprong van Madeira voor unieke landschappen die je tijdens wandeltochten kunt&nbsp;verkennen."
+  link: "#section-link"
+
+  pois:
+    items:
+
+      - id: one-first-poi
+        img: bg-img1
+        title: Typische landschappen
+        description: "Madeira trakteert haar bezoekers op weelderige natuur en indrukwekkende landschappen. Een van de belangrijkste attracties van het eiland is Laurissilva. Dit laurierbos met dik mos en grote, oude bomen staat op de werelderfgoedlijst van UNESCO. Een ander hoogtepunt zijn de populaire wandelingen langs de zogenaamde levada's. Deze irrigatiekanalen zijn honderden jaren geleden aangelegd om grote hoeveelheden water van het regenachtige noorden van Madeira naar het zuiden te transporteren. Wandel langs de kanaaltjes en ontdek onderweg de adembenemende natuur."
+        link: "#poi-link"
+
+      - id: one-second-poi
+        img: bg-img2
+        title: Het natuurfestival
+        description: "Het natuurfestival op Madeira is een echte belevenis voor grote en kleine avonturiers. Dit festival draait om het ontdekken van de prachtige natuur en sportieve uitdagingen aangaan. Overal op het eiland kun je deelnemen aan gratis activiteiten, op het land, in de bergen en in het water. Van mountainbiken tot surfen en canyoning, je vindt hier een heel scala aan sportieve activiteiten. Je hoeft alleen maar een keuze te maken tussen al dat leuks en vervolgens kun je een bijzondere ervaring delen met andere natuurliefhebbers."
+        link: "#poi-link"
+
+      - id: one-third-poi
+        img: bg-img3
+        title: Tijd voor actie met canyoning
+        description: "Als je de oospronkelijke, ongerepte natuur op Madeira wilt ervaren en tegelijk een adrenalinekick wilt ervaren, waag je dan aan een canyoning-tour. Met een groep volg je de waterloop van een beek of rivier door een kloof. Hierbij moet je klimmen, springen, abseilen of zelfs zwemmen terwijl je geniet van spectaculaire uitzichten."
+        link: "#poi-link"
+
+      - id: one-fourth-poi
+        img: bg-img4
+        title: Zweven boven Madeira
+        description: "Altijd al de indrukwekkende bergen, de ruige kust en de prachtige vegetatie van het eiland van bovenaf willen zien? Vanwege de morfologische kenmerken van Madeira, heb je hier de ideale omstandigheden om te paragliden. Ga met een paraglider de hoogte in en geniet van het unieke uitzicht. Beginners hoeven niet te vrezen, want je kunt deze unieke ervaring ook meemaken tijdens een tandemvlucht."
+        link: "#poi-link"
+
+      - id: one-fifth-poi
+        img: bg-img5
+        title: Langeafstandslopen
+        description: "Madeira's bergachtige landschap maakt het eiland een populaire plek voor hardlopers. Er vinden jaarlijks drie verschillende langeafstandsloopwedstrijden plaats die de atleten op de hoogste paden door de unieke natuur leiden, door rivieren en bossen. Onder de deelnemers bevinden zich ook bekende namen uit de nationale en internationale trailrunning-sport."
+        link: "#poi-link"
+
+      - id: one-sixth-poi
+        img: bg-img6
+        title: Madeira met de fiets
+        description: "Madeira is een echt wandelparadijs, maar ook op de fiets kun je de flora en fauna van dit Atlantische eiland uitstekend verkennen. Rijd met de mountainbike over onverharde wegen midden in de bergen en geniet van unieke uitzichten op rotslandschappen en valleien. Adem de zuivere lucht van het bloemeneiland in en beleef onvergetelijke ervaringen die je nog lang zullen bijblijven."
+        link: "#poi-link"
+
+
+
+
+
+################################################################################
+
+
+
+- id: meer
+  title: De uitgestrektheid van de&nbsp;zee
+  nav-title: Zee
+  count: "2"
+  description: "Door de ligging van het eiland midden in de Atlantische Oceaan is het uitzicht op het water rond Madeira bijna eindeloos. Met een heldere, turkooisblauwe kleur glinstert de zee onder de zon en wekt ze nieuwsgierigheid op naar de vele geheimen die onder het wateroppervlak schuilgaan. Voor de kust kun je een boottocht maken en het eiland vanuit een geheel nieuw perspectief bekijken. Of durf jij de fascinerende diepte in te duiken op een van de beste duikplekken van Europa?"
+  link: "#section-link"
+
+  pois:
+    items:
+
+      - id: two-first-poi
+        img: bg-img1
+        title: Natuurlijke zeewaterzwembaden
+        description: "De natuurlijke zeewaterzwembaden van Porto Moniz en Seixal zijn op z'n zachts gezegd bijzonder. Deze zoutwaterzwembaden, omzoomd door lavarotsen, worden op natuurlijke wijze gevoed door de zee. Ze liggen aan de noordkust van Madeira en bieden een eersteklas uitzicht op de Atlantische Oceaan en de weelderige groene landschappen van het bloemeneiland. Neem een ontspannende duik in deze unieke zwembaden en voel je één met de natuur."
+        link: "#poi-link"
+
+      - id: two-second-poi
+        img: bg-img2
+        title: Actieve vakantie voor watersporters
+        description: "Een gematigd klimaat en een watertemperatuur van 17 - 24°C nodigen het hele jaar door uit tot tal van activiteiten in de Atlantische Oceaan voor de kust van Madeira. In het noorden gaan surfers op zoek naar de perfecte golf. Aan de rustigere zuidkust krijgen windsurfers en peddelsurfers dan weer waar voor hun geld. Daarnaast is kanovaren ook een populaire sport op Madeira - op eigen kracht of onder begeleiding. Al snorkelend of duikend voor de kust ontdek je dan weer een indrukwekkende onderwaterwereld en zelfs een scheepswrak begroeid met koraal."
+        link: "#poi-link"
+
+      - id: two-third-poi
+        img: bg-img3
+        title: Elegante zeegiganten
+        description: "Dankzij een zeediepte van meer dan 3.000 meter herbergen de kustwateren van Madeira gevarieerde fauna. Talloze vissoorten, schildpadden en 28 verschillende walvis- en dolfijnensoorten spartelen in de wateren rond het eiland. Je kunt hier het hele jaar door een observatietour maken om enkele van deze elegante zeezoogdieren te spotten. Bij Madeira komen onder andere gevlekte dolfijnen, gestreepte dolfijnen, potvissen en grienden voor."
+        link: "#poi-link"
+
+
+################################################################################
+
+
+
+- id: lifestyle
+  title: De kleurrijke tradities van Madeira
+  nav-title: Lifestyle
+  count: "3"
+  description: "Duik in de veelzijdige warme cultuur van Madeira. De inwoners van dit eiland barsten van de levensvreugde en willen dit graag delen met bezoekers. Het hele jaar door worden er festivals en evenementen gehouden om de rijke cultuur van Madeira te vieren. Ervaar verder ook de hoofdstad Funchal met haar bezienswaardigheden, drukke straten en traditionele keuken om van te proeven. Proost daarna op het zoete leven met een glas Madeirawijn."
+  link: "#section-link"
+
+  pois:
+    items:
+
+      - id: three-first-poi
+        img: bg-img1
+        title: Genot voor de ziel
+        description: "In de lokale keuken van Madeira proef je de ziel en de gastvrijheid van de bewoners van de archipel terug. Door de ligging bij zee kun je hier natuurlijk eersteklas visgerechten en zeevruchten verwachten zoals gegrilde puntkokkels, tonijnsteak en zwaardvisfilet. Probeer verder ook traditionele 'Espetada', een rundvleesspies gemaakt van laurierhout met gebakken maïs en typisch brood met kruidenboter uit de regio genaamd 'Bolodo-Caco'. De overheerlijke huisgemaakte honingkoek van Madeira mag je verder ook niet missen!"
+        link: "#poi-link"
+
+      - id: three-second-poi
+        img: bg-img2
+        title: "Wijn & handwerk"
+        description: "Maak kennis met het traditionele handwerk van Madeira tijdens je vakantie. Madeira-borduurwerken zijn een eeuwenoude vorm van handwerk en de werken worden gekenmerkt door de hoge kwaliteit en indrukwekkende details. Stoffen zoals linnen en zijde worden versierd met moderne en traditionele geborduurde patronen. De traditie van Madeirawijn gaat verder meer dan 500 jaar terug. Deze likeurwijn wordt verbouwd op de berghellingen van het eiland en het wordt gekenmerkt door het bijzondere aroma en unieke karakter dat de wijn over de hele wereld populair maakt."
+        link: "#poi-link"
+
+      - id: three-third-poi
+        img: bg-img3
+        title: Wandelen door Funchal
+        description: "Funchal, de hoofdstad van de archipel, ligt in een baai aan de zuidkust van het eiland Madeira. De stad dankt zijn naam aan de wilde venkel die overal op het eiland te vinden was als plant toen de eerste nederzetting hier werd gesticht. Funchal is het grootste toeristische, commerciële en culturele centrum van de hele archipel. Hier wacht een breed scala aan activiteiten op je, van musea tot monumenten, fantastische tuinen en de jachthaven die zich goed leent voor een wandeling. Verder heeft de stad een bruisend nachtleven met talloze restaurants, bars en clubs."
+        link: "#poi-link"
+
+      - id: three-fourth-poi
+        img: bg-img4
+        title: De boerenmarkt van Funchal
+        description: "De boerenmarkt Mercado dos Lavradores is een van de handelsmerken van Funchal middenin het historische centrum. Het marktgebouw bestaat uit een bijzonder mix van Art deco en modernisme en het is absoluut de moeite waard om te bekijken. Laat je betoveren door de aroma's van het eiland op de markt, proef exotisch fruit en bewonder het grote aanbod aan bloemen, vlees, vis, groente en regionale kruiden."
+        link: "#poi-link"
+
+      - id: three-fifth-poi
+        img: bg-img5
+        title: Wilde rit in een mand
+        description: "Als je in bent voor een heel bijzondere ervaring tijdens je bezoek aan de hoofdstad van Madeira, maak dan een ritje in een mandenslee. Deze 'Carros de Cesto' worden met de hand gemaakt van hout en wilgenstaven en ze worden bestuurd door de zogenaamde 'Carreiros', twee mannen gekleed in traditionele kostuums. In de wijk Monte stap je in dit traditionele voertuig en vanuit hier glijd je een helling af voor een wilde rit. Zo'n unieke ervaring mag je zeker niet missen."
+        link: "#poi-link"
+
+      - id: three-sixth-poi
+        img: bg-img6
+        title: Het leven vieren
+        description: "Bezoek aan het begin van het jaar het carnaval van Madeira en bewonder de felgekleurde kostuums en wereldberoemde optochten. Daarna vindt het bloemenfestival plaats om de lente en het bloeiseizoen te vieren. De straten zijn dan versierd met bloemen en overal worden concerten gehouden. Het Festival do Atlântico luidt de zomer in op Madeira met vuurwerkshows op muziek. Later in het jaar vindt het wijnfestival plaats tijdens de druivenoogst in de late herfst met allerlei feestelijke activiteiten. Met kerst en oudejaarsavond krijgt Madeira extra glans met een van de grootste vuurwerkshows ter wereld."
+        link: "#poi-link"
+
+
+
+################################################################################
+
+
+
+- id: porto-santo
+  title: Strandparadijs Porto&nbsp;Santo
+  nav-title: "Porto Santo"
+  count: "4"
+  description: "Porto Santo is het op een na grootste eiland van Madeira en het ligt ongeveer 50 km ten noordoosten van het hoofdeiland. Dit paradijselijke eiland staat vooral bekend om haar mooie uitgestrekte zandstrand. De eenvoudige schoonheid van het landschap van Porto Santo nodigt je uit om wandelingen of fietstochten te maken."
+  link: "#section-link"
+
+  pois:
+    items:
+
+      - id: four-first-poi
+        img: bg-img1
+        title: Het gouden strand
+        description: "Omringd door de kristalheldere turkooizen zee vind je op Porto Santo een kleine paradijs voor zonaanbidders. Het ongeveer 9 km lange gouden zandstrand beslaat bijna de gehele zuidkust van het eilandje en het is verkozen tot het mooiste duinstrand van Portugal. Hier kun je het hele jaar door genieten van aangenaam weer, de zon, het geluid van de zee en ultieme ontspanning."
+        link: "#poi-link"
+
+      - id: four-second-poi
+        img: bg-img2
+        title: Felgekleurde onderwaterwereld
+        description: "De wateren van Porto Santo zijn populair bij duikers vanwege de helderheid en de aangename watertemperatuur. Je kunt hier uitstekend rondkijken onder water tot op 40 meter diepte. De populairste plekken om te duiken zijn onder andere de scheepswrakken van Madeira zoals Corveta General Pereira d'Eça. Bij deze scheepswrakken zijn kunstmatige riffen gecreëerd. Geniet hier van de gevarieerde zeefauna en spot bijvoorbeeld reuzenzeebaarsen, zeebrasems, koningsvissen en geelstaarten."
+        link: "#poi-link"
+
+      - id: four-third-poi
+        img: bg-img3
+        title: "Heilzame natuur"
+        description: "Porto Santo is niet alleen een strandparadijs, maar ook een wellness- en ontspanningsplek. Het zijdezachte zand van dit eiland heeft bewezen therapeutische eigenschappen. Een verblijf hier zou een positief effect moeten hebben op orthopedische en reumatische problemen. Het zeewater uit Porto Santo wordt vanwege het hoge gehalte chroom en jodium ook gebruikt voor therapeutische doeleinden, bijvoorbeeld bij thalassotherapie. "
+        link: "#poi-link"

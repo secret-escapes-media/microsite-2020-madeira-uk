@@ -1,0 +1,14 @@
+---
+layout: single-page
+id: overview
+nav: true
+nav-order: 1
+
+title: Bloemeneiland met unieke natuur
+intro-title: #
+intro: "De archipel Madeira ligt midden in de Atlantische Oceaan voor de noordwestkust van Afrika. Naast het gelijknamige hoofdeiland omvat het ook Porto Santo, Ilhas Desertas en Ilhas Selvagens. Door invloed van de Golfstroom heerst er het hele jaar door een mild mediterraan klimaat en vind je er unieke flora en fauna."
+
+banner:
+  title: Madeira
+  title-sup: Natuureiland
+---
