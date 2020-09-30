@@ -17,8 +17,7 @@ $nav-color:          $white;
 }
 
 .site-nav {
-  position: relative;
-  background-color: rgba($nav-color,9);
+  background-color: rgba($nav-color,1);
   text-align: center;
 
   // NEEDS EXPLAINING LIKE THE CORE NAV OFFSET
@@ -76,7 +75,7 @@ $nav-color:          $white;
   &__item {
     display: flex;
     flex: 1 0 auto;
-    border-right: 1px solid rgba($white,.5);
+    border-right: 1px solid rgba($white,.15);
     &:last-child { border-right: 0; }
   }
   &__link {
@@ -87,9 +86,9 @@ $nav-color:          $white;
     padding-left: $s4;
     padding-right: $s4;
     font-family: $sans;
-    font-weight: 700;
-    font-size: 11px;
-    letter-spacing: .2em;
+    font-weight: 600;
+    font-size: $s-1;
+    letter-spacing: .1em;
     text-transform: uppercase;
     color: $grey-darker;
     transition: background-color $transition-time ease;
@@ -111,5 +110,4 @@ $nav-color:          $white;
     bottom: auto;
     z-index: $z-nav  ;
   }
-
 }

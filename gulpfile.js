@@ -78,22 +78,21 @@ function buildJsMain(cb) {
     // plugins
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/jquery-countdown/dist/jquery.countdown.min.js',
-    './node_modules/waypoints/lib/jquery.waypoints.min.js',
+    // './node_modules/waypoints/lib/jquery.waypoints.min.js',
 
     // custom js - with on doc ready wrapper
     './_assets/js/_components/on-ready/start.js',
 
     // components
     './_assets/js/_components/standard.js',
-    './_assets/js/_components/offer-countdown.js',
-    './_assets/js/_components/offer-sheet.js',
     './_assets/js/_components/modal.js',
     './_assets/js/_components/modal-nav.js',
-    './_assets/js/_components/sticky-nav.js',
+    //'./_assets/js/_components/sticky-nav.js',
     './_assets/js/_components/form/functions.js',
     './_assets/js/_components/form/validation.js',
     './_assets/js/_components/competition.js',
-    './_assets/js/_components/simple-form.js',
+    './_assets/js/_components/offer-sheet.js',
+    './_assets/js/_components/offer-countdown.js',
 
     // custom js for project
     './_assets/js/main.js',

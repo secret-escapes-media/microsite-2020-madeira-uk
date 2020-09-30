@@ -4,6 +4,8 @@
 // GET OFFERS FROM GOOGLE SHEET
 ///////////////////////////////////////
 
+
+
 // get all offer sections on page
 var offerSections = $('.js-dynamic-offers');
 
@@ -12,12 +14,8 @@ var offerSections = $('.js-dynamic-offers');
 $(offerSections).each(function(){
   var offerSection = $(this);
   var sheetName = offerSection.data('offer-sheet');
-  if( offerSection.data('offer-limit') ) {
-    var limiter = offerSection.data('offer-limit') - 1;// -1 to balance against index number
-  }else{
-    var limiter = 30;// -1 to balance against index number
-  }
-console.log(sheetName);
+  var limiter = offerSection.data('offer-limit') - 1;// -1 to balance against index number
+
   /*===== QUERY GOOGLE SHEET =====*/
   var spreadsheetID = "1oMS3dkm87oOSFHdOEtb25Qm3IUU4ne_FtVGNqRpdQG4"; // ID of Google Spreadsheet
   var apiKey = "AIzaSyBww8fHIRizAYPWsYyNGcRvLvzTLvvKmkw"; // API key for accessing G Sheet
@@ -30,7 +28,6 @@ console.log(sheetName);
       return item[0] != 0;
     });
 
-    // sort by discount
     var sortedDeals = deals.sort(function(a,b){ return a[6] > b[6] ?1 :-1 });
 
     offerSection.empty(); // remove loading icon
@@ -54,25 +51,25 @@ console.log(sheetName);
 
         var htmlCol          = '<div class="col"></div>';
         var htmlOffer        = '<div class="offer depth--sm depth--sm-hover rounded--sm"></div>';
-        var htmlLink         = '<a class="offer__link" href="'+saleURL+'" target="_blank"><span class="btn btn--orange">Zum Angebot</span></a>';
-        var htmlImage        = '<div class="bg-img bg-img--16-9" style="background-image: url('+saleImage+')"></div>';
-        var htmlCountdown    = '<div class="offer__expires js-offer-expires text--sm" data-expires="'+saleEndDate+'" style="display:none;"></div>';
+        var htmlLink         = '<a class="offer__link" href="'+saleURL+'" target="_blank"><span class="btn btn--orange">Aanbieden</span></a>';
+        var htmlImage        = '<div class="img img--16-9" style="background-image: url('+saleImage+')"></div>';
+        var htmlCountdown    = '<div class="offer__expires js-offer-expires p--sm" data-expires="'+saleEndDate+'" style="display:none;"></div>';
         var htmlTags         = '<div class="offer__tags"></div>';
-        var htmlContentWrap  = '<div class="boxpad--lg"></div>';
-        var htmlLocation     = '<div class="offer__location">'+saleLocation+'</div>';
-        var htmlTitle        = '<h2 class="offer__title">'+saleTitle+'</h2><div class="space--sm"></div>';
+        var htmlContentWrap  = '<div class="boxpad--md"></div>';
+        var htmlLocation     = '<h4 class="offer__location">'+saleLocation+'</h4>';
+        var htmlTitle        = '<h3 class="offer__title">'+saleTitle+'</h3>';
         var htmlDescription  = '<div class="offer__description">'+saleDescription+'</div>';
         var htmlBottom       = '<div class="offer__bottom"></div>';
-        var htmlBottomLeft   = '<div class="offer__bottom-left"><div class="offer__details">Ab <span class="offer__price">'+salePrice+' €</span> '+salePriceDescription+'</div></div>';
+        var htmlBottomLeft   = '<div class="offer__bottom-left"><div class="offer__details">Vanaf <span class="offer__price">'+salePrice+' €</span> '+salePriceDescription+'</div></div>';
 
-    /*  if(saleTags.indexOf("refundable") >= 0){
-          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-refundable'>Stornierbar</div>");
+      /*  if(saleTags.indexOf("refundable") >= 0){
+          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-refundable'>Refundable</div>");
         }*/
         if(saleTags.indexOf("customisable") >= 0){
-          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-customisable'>Konfigurierbar</div>");
+          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-customisable'>Customisable</div>");
         }
         if (saleTags.indexOf("flights") >= 0){
-          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-flights'>Flüge</div>");
+          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-flights'>Vluchten</div>");
         }
 
         if(saleDiscount > 0){
@@ -88,13 +85,7 @@ console.log(sheetName);
         var offer = $(htmlCol).append(inner);
 
         $(offerSection).prepend(offer);
-        $('body').addClass('offers-loaded');
       }// end if
     });// end forloop of deals
   });// end JSON request
-
 });//end forloop of offerSections
-
-setTimeout(function(){
-  expiryDates();
-},5000);

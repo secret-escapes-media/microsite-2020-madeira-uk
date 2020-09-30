@@ -7,6 +7,7 @@ var stickyNavClass     = '.js-sticky-nav';
 var stickyNavContainer = '.banner';
 var stickyNavModifier  = 'is-stuck';
 
+
 function stickyNav(){
 
   var scrollTop = $(document).scrollTop();

@@ -2,45 +2,51 @@
 
 .bg {
   &--white { background-color: $white; }
-  &--light { background-color: $grey-lightest; }
-  &--dark  { background-color: $grey-dark; }
-  &--bv-blue { background-color: $bv-blue; }
-  &--bv-beige { background-color: $bv-beige; }
-  &--bv-lightgrey { background-color: $bv-lightgrey; }
-  &--bv-yellow { background-color: $bv-yellow; }
-  &--bv-pink { background-color: $bv-pink; }
-  &--bv-green { background-color: $bv-green; }
+  &--black { background-color: $black; }
+
+  &--grey-lightest      { background-color: $grey-lightest; }
+  &--grey-lighter       { background-color: $grey-lighter; }
+  &--grey-light         { background-color: $grey-light; }
+  &--grey               { background-color: $grey; }
+  &--grey-dark          { background-color: $grey-dark; }
+  &--grey-darker        { background-color: $grey-darker; }
+  &--grey-darkest       { background-color: $grey-darkest; }
+
+  &--primary-lightest   { background-color: $primary-lightest; }
+  &--primary-lighter    { background-color: $primary-lighter; }
+  &--primary-light      { background-color: $primary-light; }
+  &--primary            { background-color: $primary; }
+  &--primary-dark       { background-color: $primary-dark; }
+  &--primary-darker     { background-color: $primary-darker; }
+  &--primary-darkest    { background-color: $primary-darkest; }
+
+  &--secondary-lightest { background-color: $secondary-lightest; }
+  &--secondary-lighter  { background-color: $secondary-lighter; }
+  &--secondary-light    { background-color: $secondary-light; }
+  &--secondary          { background-color: $secondary; }
+  &--secondary-dark     { background-color: $secondary-dark; }
+  &--secondary-darker   { background-color: $secondary-darker; }
+  &--secondary-darkest  { background-color: $secondary-darkest; }
+
+  &--success            { background-color: $success; }
+  &--success-light      { background-color: $success-light; }
+  &--success-medium     { background-color: $success-medium; }
+  &--success-dark       { background-color: $success-dark; }
+
+  &--error              { background-color: $error; }
+  &--error-light        { background-color: $error-light; }
+  &--error-medium       { background-color: $error-medium; }
+  &--error-dark         { background-color: $error-dark; }
+
   &--img   { @include background-attributes; }
   &__fixed {
-    position: relative;
-    &-wrap {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: $z-background;
-      width: 100%;
-      height: 100%;
-      .svgclippaths & { clip: rect(0, auto, auto, 0); }
-    }
-    &-img {
-      position: absolute;
-      z-index: $z-background;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      .svgclippaths & {
-        position: fixed;
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll;
-        transform: translateZ(0);
-        will-change: transform;
-      }
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-background;
+    @include background-attributes;
+    background-color: $grey-darker;
   }
 }

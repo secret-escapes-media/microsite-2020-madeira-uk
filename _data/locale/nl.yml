@@ -1,0 +1,22 @@
+
+
+
+core-site: https://nl.secretescapes.com/
+in-partnership: #
+
+header:
+  core-nav:
+    - link: https://nl.secretescapes.com/aanbiedingen
+      label: Actuele aanbiedingen
+    - link: https://nl.secretescapes.com/lastminute/filter
+      label: Last minute
+    - link: https://nl.secretescapes.com/strand/filter
+      label: Strandvakantie
+  favourites:
+    link: https://nl.secretescapes.com/mijn-favorieten
+    label: Mijn favorieten
+
+promo-offer:
+  promo-title: Maar dat is nog niet alles...
+  promo-description: We hebben nog veel meer wereldwijde aanbiedingen - voor topprijzen
+  promo-cta: Bekijk het aanbod
