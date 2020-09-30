@@ -1,4 +1,4 @@
-- id: natur
+- id: one
   title: Madeira's unieke natuur
   count: "1"
   nav-title: Natuur
@@ -52,7 +52,7 @@
 
 
 
-- id: meer
+- id: two
   title: De uitgestrektheid van de&nbsp;zee
   nav-title: Zee
   count: "2"
@@ -85,7 +85,7 @@
 
 
 
-- id: lifestyle
+- id: three
   title: De kleurrijke tradities van Madeira
   nav-title: Lifestyle
   count: "3"
@@ -137,7 +137,7 @@
 
 
 
-- id: porto-santo
+- id: four
   title: Strandparadijs Porto&nbsp;Santo
   nav-title: "Porto Santo"
   count: "4"
