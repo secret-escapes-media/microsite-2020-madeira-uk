@@ -11,77 +11,69 @@
 
     {% include page/banner.html %}
 
-    <div class="vpad--xxl bg--grey-lightest ">
-        <div class="container">
-          <div class="width width--lg text--center">
-              <div class="p p--xl" >{{page.intro}}</div>
-
-          </div>
+    <div class="vpad--xxl bg--grey-lightest">
+      <div class="container">
+        <div class="width width--lg text--center">
+            <div class="p p--xl">{{page.intro}}</div>
         </div>
       </div>
+    </div>
 
     <div class="content-spacing section-spacing">
 
       <!-- loops through section file for page content -->
       {% for section in site.data.sections %}
-
-                <div id="{{section.id}}"  class="bv-section-bg js-nav-section">
-                  <div class="bv-parallax vpad--xl" style="background-image: url('{{site.img}}/pages/{{section.id}}/hero.jpg'); {{section.bg-pos}}">
-                    <div class="container">
-                      <div class="space--xxxl"></div>
-                        <div class="row row--justify row--xl-4-4-4 row--gutters ">
-                          <div class="col--xl-7 boxpad--xl text--xxl text--normal theme--dark">
-                          <div class="h h--xl ">{{section.title}}</div>
-                          <div class="space--sm "></div>
-                          <div class="p p--xxl">{{section.description}}</p>
-                          <div class="space--xxl"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+        <div id="{{section.id}}"  class="bv-section-bg js-nav-section">
+          <div class="bv-parallax vpad--xl" style="background-image: url('{{site.img}}/pages/{{section.id}}/hero.jpg'); {{section.bg-pos}}">
+            <div class="container">
+              <div class="space--xxxl"></div>
+              <div class="row row--justify row--xl-4-4-4 row--gutters">
+                <div class="col--xl-7 boxpad--xl text--xxl text--normal theme--dark">
+                  <div class="h h--xl">{{section.title}}</div>
+                  <div class="space--sm"></div>
+                  <div class="p p--xxl">{{section.description}}</div>
+                  <div class="space--xxl"></div>
                 </div>
-                <div class=" bg--white" >
-                  <div class="container vpad--lg">
-                      <div class="row row--xl-4-4-4 row--lg-6-6 row--gutters " >
-                        {% for poi in section.pois.items %}
-                        <div class="col text--normal text--justify">
-                          <div class="img bg--white img--4-3" style="background-image:url({{site.img}}/pages/{{section.id}}/{{poi.img}}.jpg);"> </div>
-                          <div class="space--md"></div>
-                          <h5 class="h h--xxs text--left ">{{poi.title}}</h5>
-                          <div class="space--xs"></div>
-                          <div class=" p p--xl">{{poi.description}}</div>
-                        </div>
-                        {% endfor %}
-                      </div>
-                      <div class="space--xxl"></div>
-                  </div>
-                </div>
-
-
-          {% endfor %}
-          <!-- Anreise section -->
-            <div id="anreise" class="js-nav-section">
-
-              {% include page/arrival.html %}
-
+              </div>
             </div>
+          </div>
+          <div class="bg--white">
+            <div class="container vpad--lg">
+              <div class="row row--xl-4-4-4 row--lg-6-6 row--gutters">
+                {% for poi in section.pois.items %}
+                  <div class="col text--normal text--justify">
+                    <div class="img bg--white img--4-3" style="background-image:url({{site.img}}/pages/{{section.id}}/{{poi.img}}.jpg);"></div>
+                    <div class="space--md"></div>
+                    <h5 class="h h--xxs text--left">{{poi.title}}</h5>
+                    <div class="space--xs"></div>
+                    <div class="p p--xl">{{poi.description}}</div>
+                  </div>
+                {% endfor %}
+              </div>
+              <div class="space--xxl"></div>
+            </div>
+          </div>
+          {% if forloop.last %}
+            <!-- Anreise section -->
+            <div id="anreise">
+              {% include page/arrival.html %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
 
       <!-- Offers section -->
       <div id="offers" class="js-nav-section bg--white">
-            <div class="space--xxxl"></div>
-            <div class="h h--xl text--center">Aanbiedingen</div>
-
+        <div class="space--xxxl"></div>
+        <div class="h h--xl text--center">Aanbiedingen</div>
         {% include offer/all-offers-dynamic.html sheet=page.offers.sheet limit=page.offers.limit %}
-
-            <div class="space--xxl"></div>
-            {% include page/promo-offers.html %}
-          </div>
+        <div class="space--xxl"></div>
+        {% include page/promo-offers.html %}
+      </div>
 
     </div>
 
     {% include nav/footer.html %}
-
-
 
   </body>
 

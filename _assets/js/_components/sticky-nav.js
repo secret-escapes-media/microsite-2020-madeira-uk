@@ -6,14 +6,14 @@
 var stickyNavClass     = '.js-sticky-nav';
 var stickyNavContainer = '.banner';
 var stickyNavModifier  = 'is-stuck';
-
+var siteHeader         = '.site-header';
 
 function stickyNav(){
 
   var scrollTop = $(document).scrollTop();
   var nav       = $(stickyNavClass);
   var navHeight = nav.outerHeight();
-  var distance  = $(stickyNavContainer).outerHeight() - navHeight;
+  var distance  = $(stickyNavContainer).outerHeight() + $(siteHeader).outerHeight() - navHeight;
 
   if( scrollTop > distance ){
     nav.addClass(stickyNavModifier);
