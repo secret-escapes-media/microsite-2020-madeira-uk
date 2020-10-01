@@ -1,9 +1,6 @@
-
-
 ///////////////////////////////////////
 // GET OFFERS FROM GOOGLE SHEET
 ///////////////////////////////////////
-
 
 
 // get all offer sections on page
@@ -17,7 +14,7 @@ $(offerSections).each(function(){
   var limiter = offerSection.data('offer-limit') - 1;// -1 to balance against index number
 
   /*===== QUERY GOOGLE SHEET =====*/
-  var spreadsheetID = "1oMS3dkm87oOSFHdOEtb25Qm3IUU4ne_FtVGNqRpdQG4"; // ID of Google Spreadsheet
+  var spreadsheetID = "14g1IiRy-0A3yFke6WRhvB_AOn_bNVESIDasUVcc93PM"; // ID of Google Spreadsheet
   var apiKey = "AIzaSyBww8fHIRizAYPWsYyNGcRvLvzTLvvKmkw"; // API key for accessing G Sheet
   var url = "https://sheets.googleapis.com/v4/spreadsheets/" + spreadsheetID + "/values/" + sheetName + "!A3:Z?&key=" + apiKey;
 
@@ -51,7 +48,7 @@ $(offerSections).each(function(){
 
         var htmlCol          = '<div class="col"></div>';
         var htmlOffer        = '<div class="offer depth--sm depth--sm-hover rounded--sm"></div>';
-        var htmlLink         = '<a class="offer__link" href="'+saleURL+'" target="_blank"><span class="btn btn--orange">Aanbieden</span></a>';
+        var htmlLink         = '<a class="offer__link" href="'+saleURL+'"><span class="btn btn--orange">View Offer</span></a>';
         var htmlImage        = '<div class="img img--16-9" style="background-image: url('+saleImage+')"></div>';
         var htmlCountdown    = '<div class="offer__expires js-offer-expires p--sm" data-expires="'+saleEndDate+'" style="display:none;"></div>';
         var htmlTags         = '<div class="offer__tags"></div>';
@@ -60,16 +57,16 @@ $(offerSections).each(function(){
         var htmlTitle        = '<h3 class="offer__title">'+saleTitle+'</h3>';
         var htmlDescription  = '<div class="offer__description">'+saleDescription+'</div>';
         var htmlBottom       = '<div class="offer__bottom"></div>';
-        var htmlBottomLeft   = '<div class="offer__bottom-left"><div class="offer__details">Vanaf <span class="offer__price">'+salePrice+' €</span> '+salePriceDescription+'</div></div>';
+        var htmlBottomLeft   = '<div class="offer__bottom-left"><div class="offer__details">From <span class="offer__price">£'+salePrice+'</span> '+salePriceDescription+'</div></div>';
 
-      /*  if(saleTags.indexOf("refundable") >= 0){
+        if(saleTags.indexOf("refundable") >= 0){
           htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-refundable'>Refundable</div>");
-        }*/
+        }
         if(saleTags.indexOf("customisable") >= 0){
           htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-customisable'>Customisable</div>");
         }
         if (saleTags.indexOf("flights") >= 0){
-          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-flights'>Vluchten</div>");
+          htmlTags = $(htmlTags).append("<div class='offer__tag offer__tag-flights'>Flights</div>");
         }
 
         if(saleDiscount > 0){

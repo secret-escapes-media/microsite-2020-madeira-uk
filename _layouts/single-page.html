@@ -13,8 +13,32 @@
 
     <div class="vpad--xxl bg--grey-lightest">
       <div class="container">
-        <div class="width width--lg text--center">
-            <div class="p p--xl">{{page.intro}}</div>
+        <div class="width width--xl text--center">
+          <div class="p p--xl">{{site.description}}</div>
+          <div class="width width--md">
+            <div class="space--lg"></div>
+            <p class="text  text--center">Fly to Madeira with one of these airlines</p>
+            <div class="space--xxs"></div>
+            <div class="bg--white boxpad--lg" style="border-radius: .25rem;">
+              <div class="row row--md-4-4-4">
+                <div class="col">
+                  <a href="https://www.jet2holidays.com/destinations/portugal/madeira">
+                    <img src="{{site.img}}/logo/airlines/jet2.svg" alt="Jet2.com">
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="https://www.britishairways.com/pt-pt/destinations/madeira">
+                    <img src="{{site.img}}/logo/airlines/british-airways.svg" alt="British Airways">
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="https://www.easyjet.com/en/holidays/portugal/madeira">
+                    <img src="{{site.img}}/logo/airlines/easyjet.svg" alt="Easyjet">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -24,7 +48,7 @@
       <!-- loops through section file for page content -->
       {% for section in site.data.sections %}
         <div id="{{section.id}}"  class="bv-section-bg js-nav-section">
-          <div class="bv-parallax vpad--xl" style="background-image: url('{{site.img}}/pages/{{section.id}}/hero.jpg'); {{section.bg-pos}}">
+          <div class="bv-parallax vpad--xl" style="background-image: url('{{site.img}}/content/{{section.id}}/hero.jpg'); {{section.bg-pos}}">
             <div class="container">
               <div class="space--xxxl"></div>
               <div class="row row--justify row--xl-4-4-4 row--gutters">
@@ -42,7 +66,7 @@
               <div class="row row--xl-4-4-4 row--lg-6-6 row--gutters">
                 {% for poi in section.pois.items %}
                   <div class="col text--normal text--justify">
-                    <div class="img bg--white img--4-3" style="background-image:url({{site.img}}/pages/{{section.id}}/{{poi.img}}.jpg);"></div>
+                    <div class="img bg--white img--4-3" style="background-image:url({{site.img}}/content/{{section.id}}/{{poi.id}}.jpg);"></div>
                     <div class="space--md"></div>
                     <h5 class="h h--xxs text--left">{{poi.title}}</h5>
                     <div class="space--xs"></div>
@@ -53,21 +77,16 @@
               <div class="space--xxl"></div>
             </div>
           </div>
-          {% if forloop.last %}
-            <!-- Anreise section -->
-            <div id="anreise">
-              {% include page/arrival.html %}
-            </div>
-          {% endif %}
         </div>
       {% endfor %}
 
       <!-- Offers section -->
       <div id="offers" class="js-nav-section bg--white">
         <div class="space--xxxl"></div>
-        <div class="h h--xl text--center">Aanbiedingen</div>
+        <div class="h h--xl text--center">Offers</div>
+        <div class="space--lg"></div>
         {% include offer/all-offers-dynamic.html sheet=page.offers.sheet limit=page.offers.limit %}
-        <div class="space--xxl"></div>
+        <div class="space--xxxl"></div>
         {% include page/promo-offers.html %}
       </div>
 

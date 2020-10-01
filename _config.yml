@@ -1,21 +1,19 @@
 # Site settings
 title: Madeira
-locale: nl
+locale: uk
 partner:
-  name: Bloemeneiland met unieke natuur
-  link: http://www.visitmadeira.pt/
+  name: Madeira Regional Tourism Board
+  link: "http://www.visitmadeira.pt"
 
 description: >
-  De archipel Madeira ligt midden in de Atlantische Oceaan voor de noordwestkust van Afrika. Naast het gelijknamige hoofdeiland omvat het ook Porto Santo, Ilhas Desertas en Ilhas Selvagens
-
-
+  The Madeira archipelago lies in the middle of the Atlantic Ocean off the northwest coast of Africa. In addition to the main island of the same name, it also includes Porto Santo, Ilhas Desertas and Ilhas Selvagens. Madeira enchants visitors with a year-round mild, Mediterranean climate thanks to its proximity to the Gulf Stream and beautifully unique nature. Madeira has also been voted one of the best places to experience a winter sun&nbsp;escape.
 
 # file paths
 url:     "https://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/nl/2020/madeira" # the subpath of your site, e.g. /blog/
-img:     "/nl/2020/madeira/_assets/img"
-css:     "/nl/2020/madeira/_assets/css"
-js:      "/nl/2020/madeira/_assets/js"
+baseurl: "/uk/2020/madeira" # the subpath of your site, e.g. /blog/
+img:     "/uk/2020/madeira/_assets/img"
+css:     "/uk/2020/madeira/_assets/css"
+js:      "/uk/2020/madeira/_assets/js"
 
 # Build settings
 markdown: kramdown
