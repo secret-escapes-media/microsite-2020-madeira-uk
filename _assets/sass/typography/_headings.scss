@@ -48,7 +48,11 @@
   // custom banner headline
   font-family: $serif;
   line-height: 1.1;
-  font-size: $s8;
-  @include bp($md){ font-size: $s10; }
+  font-size: $s7;
+  @include bp($md){ font-size: $s9; }
+  @include bp($lg){ font-size: $s10; }
+}
+.h--banner { // separate class for vw fallback & max size
+  font-size: 17.75vw;
   @include bp($xl){ font-size: $s12; }
 }

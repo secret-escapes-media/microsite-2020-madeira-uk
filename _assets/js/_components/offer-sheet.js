@@ -50,7 +50,7 @@ $(offerSections).each(function(){
         var htmlOffer        = '<div class="offer depth--sm depth--sm-hover rounded--sm"></div>';
         var htmlLink         = '<a class="offer__link" href="'+saleURL+'"><span class="btn btn--orange">View Offer</span></a>';
         var htmlImage        = '<div class="img img--16-9" style="background-image: url('+saleImage+')"></div>';
-        var htmlCountdown    = '<div class="offer__expires js-offer-expires p--sm" data-expires="'+saleEndDate+'" style="display:none;"></div>';
+        // var htmlCountdown    = '<div class="offer__expires js-offer-expires p--sm" data-expires="'+saleEndDate+'" style="display:none;"></div>';
         var htmlTags         = '<div class="offer__tags"></div>';
         var htmlContentWrap  = '<div class="boxpad--md"></div>';
         var htmlLocation     = '<h4 class="offer__location">'+saleLocation+'</h4>';
@@ -76,7 +76,7 @@ $(offerSections).each(function(){
         }
 
         var bottom = $(htmlBottom).append(htmlBottomLeft).append(htmlBottomRight);
-        var image = $(htmlImage).append(htmlCountdown).append(htmlTags);
+        var image = $(htmlImage).append(htmlTags);
         var content = $(htmlContentWrap).append(htmlLocation).append(htmlTitle).append(htmlDescription).append(bottom);
         var inner = $(htmlOffer).append(htmlLink).append(image).append(content);
         var offer = $(htmlCol).append(inner);

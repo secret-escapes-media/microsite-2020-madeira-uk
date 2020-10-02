@@ -162,7 +162,7 @@
 .width {
   margin-right: auto;
   margin-left: auto;
-  &--xxs { max-width: ($sm / 3); }
+  &--xxs { max-width: ($sm / 2.5); }
   &--xs  { max-width: ($sm / 2); }
   &--sm  { max-width: $sm; }
   &--md  { max-width: $md; }

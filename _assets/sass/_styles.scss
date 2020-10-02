@@ -1,129 +1,17 @@
 // general styles for the project that wouldn't be a reuseable component
 
-
 /* ==========================================================================
    Parallax & Backgrounds
    ========================================================================== */
 
-.bv-parallax{
+.bv-parallax {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
-
 @media only screen and (max-width: 1024px) {
-
-.bv-remove-bg{
-  background-image: none!important;
-}
-
-.bv-parallax{
-  background-attachment: scroll;
-  background-size: cover;
+  .bv-parallax {
+    background-attachment: scroll;
+    background-size: cover;
   }
-
 }
-
-.bv-banner-out{}
-
-.bv-scroll-left1, .bv-scroll-left3, .bv-scroll-left4{
-  margin-left: -600px;
-  //opacity: 0;
-}
-.bv-scroll-left2 {
-  margin-right: -600px;
-  //opacity: 0;
-}
-
-
-
-
-
-  /* ==========================================================================
-     airline banner
-     ========================================================================== */
-
-  .bv-orange-condor{
-
-  background-color: $primary;
-  height: 10px;
-  overflow: visible;
-  text-align: center;
-
-  @include bp($xxl){
-
-      text-align: left; }
-  }
-
-
-  .bv-section-condor{
-    color:$white;
-    background-color: #333;
-
-
-  }
-
-  .bv-logo {
-
-      width: 100%;
-      max-width: 180px;
-      text-align: center;
-      border-radius: 8px;
-      color: $white;
-      z-index: 10;
-
-
-  }
-
-
-  .bv-img-arrival{
-
-      outline-offset: -3px;
-      outline: 6px solid #fff;
-      box-shadow: 0px 0px 15px 8px rgba($black, .1);
-      transform: rotate(0deg);
-      margin-top: 15px;
-      width: 95%!important;
-      @include bp($xxl){
-
-        transform: rotate(-3.5deg); }
-    }
-
-    .bv-iframe-ratio {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-top: 56.25%; // 16:9 ratio
-      background-color:#000;
-    }
-
-    .bv-iframe-ratio iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0; top: 0;
-    }
-
-
-
-  .bv-badge-arrival{
-    position: absolute;
-    width: 102px;
-    height: 102px;
-    top: $s1 ;
-    right: $s1;
-    border: 2px solid $white;
-    text-align: center;
-    border-radius: 100px;
-    background-color: $bv-green;
-    color: $white;
-    transform: rotate(0deg);
-    z-index: 10;
-
-    @include bp($lg){
-
-      width: 112px;
-      height: 112px;}
-
-    }
